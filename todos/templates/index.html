@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-    <h1>TodoList</h1>
-      <hr>
-  <body>
+{% include 'partials/header.html' %}
+
     <ul>
       {% for todo in todos %}
         <li>
@@ -14,5 +7,5 @@
         </li>
       {% endfor %}
     </ul>
-  </body>
-</html>
+
+{% include 'partials/footer.html' %}
